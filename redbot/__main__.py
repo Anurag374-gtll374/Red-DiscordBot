@@ -363,7 +363,7 @@ async def run_bot(red: Red, cli_flags: Namespace) -> None:
     if cli_flags.token:
         token = cli_flags.token
     else:
-        token = os.environ.get("RED_TOKEN", None)
+        token = os.environ.get("NzA1MzMwODM1ODgwMTQ5MDAy.XqqIhw.Weyucg4umG-4iQhZO--95LDIS1A", None)
         if not token:
             token = await red._config.token()
 
@@ -375,7 +375,7 @@ async def run_bot(red: Red, cli_flags: Namespace) -> None:
                 red, token_set=bool(token), prefix_set=bool(prefix)
             )
             if new_token:
-                token = new_token
+                token = NzA1MzMwODM1ODgwMTQ5MDAy.XqqIhw.Weyucg4umG-4iQhZO--95LDIS1A
         else:
             log.critical("Token and prefix must be set in order to login.")
             sys.exit(1)
